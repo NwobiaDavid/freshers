@@ -5,6 +5,7 @@ const productSChema = new Schema({
   price: { type: String, required: true },
   creator: { type: String, required: true },
   creatorName: { type: String, required: true },
+  likes: { type: Number, required: true, default:0}
 });
 
 const productModal = models.product || mongoose.model("product", productSChema);

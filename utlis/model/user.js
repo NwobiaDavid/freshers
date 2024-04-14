@@ -8,6 +8,6 @@ const userSChema = new Schema({
   image: { type: String, required: true, default: "https://res.cloudinary.com/geekysrm/image/upload/v1542221619/default-user.png" },
 });
 
-const userModal = models.user || mongoose.model("user", userSChema);
+const userModal = models.user || mongoose.model("user", userSChema)  ;
 
 export default userModal;
